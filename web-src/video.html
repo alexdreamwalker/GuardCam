@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="socket.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			startJob();
+		</script>
+		<div style="height: 70%" align="center">
+			<img src="http://192.168.1.4:8080/?action=stream">
+		</div>
+		<div style="height: 30%" align="center">
+			<div style="height: 30%" align="center">
+				<button class="btn btn-primary" type="button" onclick="WebSocketCommand('up');">UP</button>
+			</div>
+			<div style="height: 30%" align="center">
+				<button class="btn btn-primary" type="button" onclick="WebSocketCommand('left');">LEFT</button>
+				<button class="btn btn-warning" type="button" onclick="WebSocketCommand('photo');">PHOTO</button>
+				<button class="btn btn-primary" type="button" onclick="WebSocketCommand('right');">RIGHT</button>
+			</div>
+			<div style="height: 30%" align="center">
+				<button class="btn btn-primary" type="button" onclick="WebSocketCommand('down');">DOWN</button>
+			</div>
+			<div id="sound">
+			</div>
+		</div>
+	</body>
+</html>

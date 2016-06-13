@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script type="text/javascript" src="socket.js"></script>
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" > </link>
+		<link href="favicon.ico" rel=”icon” type="image/x-icon" > </link>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<title>
+				GuardCamSys
+		</title>
+	</head>
+	<body id="body">
+		<script type="text/javascript">
+			startJob();
+		</script>
+		<img id="img" src="http://192.168.1.4:8080/?action=stream">
+		<div id="headline">
+			<img id="logo" src="logo.png">
+		</div>
+		<div id = "wrapper">	
+		<div id = "joystick">
+					<input type="button" class="butt" id="butt_UP" value="UP" onclick="WebSocketCommand('up');">
+					<input type="button" class="butt" id="butt_LEFT"  value="LEFT" onclick="WebSocketCommand('left');">
+					<input type="button" class="butt" id="butt_CENTER"  value="SHOT" onclick="WebSocketCommand('photo');">
+					<input type="button" class="butt" id="butt_RIGHT"  value="RIGHT" onclick="WebSocketCommand('right');">
+					<input type="button" class="butt" id="butt_DOWN"  value="DOWN"  onclick="WebSocketCommand('down');">
+		</div>
+		</div>
+	</body>
+</html>
