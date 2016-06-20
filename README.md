@@ -16,3 +16,7 @@ Cross-browser WebSocket web client displays camera video stream, has controls fo
 * Linux server with apache, php and mjpeg-streamer
 * WebSocket-compatible browser
 * Web camera with linux drivers available
+
+## Visual representation
+
+See images folder for more details.
